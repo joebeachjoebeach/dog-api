@@ -8,7 +8,7 @@ A Python wrapper for the [Dog API](https://dog.ceo/dog-api)
 import dog
 ```
 
-**Get a list of all the main ('master') breeds:**
+**Get a list of all the main breeds:**
 ```python
 dog.master_breeds()
 ```
@@ -43,4 +43,20 @@ dog.all_images('poodle')
 
 # for a particular sub-breed  -->  dog.all_images({breed}, {sub-breed})
 dog.all_images('spaniel', 'japanese')
+```
 
+---
+---
+
+### Contributing
+PR's welcome!
+
+**Getting started**
+1. Clone or download the repo
+2. Install the Python dependencies: `pipenv install`
+3. Activate the virtual environment: `pipenv shell`
+
+**Running tests**
+
+* `py.test` will work ideally, but if not:
+* `PYTHONPATH=. py.test` ought to do the trick

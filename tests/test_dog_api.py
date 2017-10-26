@@ -1,4 +1,4 @@
-import dog
+import dog_api as dog
 
 def test_master_breeds():
     """Tests a call to get all master breeds."""

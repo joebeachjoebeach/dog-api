@@ -5,7 +5,7 @@ A Python wrapper for the [Dog API](https://dog.ceo/dog-api)
 
 **Import the module:**
 ```python
-import dog
+import dog_api as dog
 ```
 
 **Get a list of all the main breeds:**

@@ -39,34 +39,3 @@ def all_images(breed, subbreed=None):
             raise TypeError('subbreed must be a string')
         return _get('breed/{0}/{1}/images'.format(breed, subbreed))
         
-
-
-  
-  
-
-def all_images_from_breed(breed):
-  """Gets a list of all the images for the chosen breed. Returns a list of urls as strings."""
-  if not isinstance(breed, str):
-    raise TypeError('you must input the breed as a string')
-  return _get('breed/{0}/images'.format(breed))
-  
-
-def random_image_from_breed(breed):
-  """Gets a random image for the chosen breed. Returns a url as a string."""
-  if not isinstance(breed, str):
-    raise TypeError('you must input the breed as a string')
-  return _get('breed/{0}/images/random'.format(breed))
-
-
-def all_images_from_subbreed(breed, subbreed):
-  """Gets a list of all images of the chosen sub-breed. Returns a list of urls as strings."""
-  if not isinstance(breed, str) or not isinstance(subbreed, str):
-    raise TypeError('you must input the breed and subbreed as a string')
-  return _get('breed/{0}/{1}/images'.format(breed, subbreed))
-    
-
-def random_image_from_subbreed(breed, subbreed):
-  """Gets a random image of the chosen sub-breed. Returns a url as a string."""
-  if not isinstance(breed, str) or not isinstance(subbreed, str):
-    raise TypeError('you must input the breed and subbreed as a string')
-  return _get('breed/{0}/{1}/images/random'.format(breed, subbreed))
